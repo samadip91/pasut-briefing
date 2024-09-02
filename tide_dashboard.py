@@ -33,8 +33,8 @@ st.markdown(margins_css, unsafe_allow_html=True)
 # Display the image and title
 col1, col2 = st.columns([1, 12])
 with col1:
-    #st.image(icon_url , width=80)
-    st.image(icon_url, width=80, style={"margin-top": "20px"})
+    st.image(icon_url , width=80)
+    #st.image(icon_url, width=80, style={"margin-top": "20px"})
 with col2:
     st.title("Tabel dan Grafik Pasang Surut")
     st.write("Briefing Pusat Meteorologi Maritim")
