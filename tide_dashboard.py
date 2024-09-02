@@ -56,7 +56,6 @@ main_table = main_table.set_index('time')
 
 with col1:
     #st.subheader("Content for Column 1")
-    st.image(icon_url , width=150)
     #st.write("This text appears in the first column.")
     # Choosing the start and end time interface
     locations = ['Jakarta', 'Semarang', 'Cilacap', 'Surabaya']
@@ -126,7 +125,6 @@ df_tabel = df_tabel.round(1)
 
 #st.dataframe(series_to_plot)    
 with col2:
-    st.title("Tabel dan Grafik Pasang Surut")
     st.subheader('Pasang Surut '+selected_location)
     #st.write("This text appears in the second column.")
     #st.title('Pasang Surut '+selected_location)
