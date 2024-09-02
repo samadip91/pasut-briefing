@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 # Image URL
 icon_url = "https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_BMKG_%282010%29.png"
-st.set_page_config(page_title="Pasut Briefing Maritim", page_icon=icon_url, layout="centered")
+st.set_page_config(page_title="Pasut Briefing Maritim", page_icon=icon_url, layout="wide")
 
 #st.set_page_config(layout="wide")
 
