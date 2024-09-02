@@ -34,7 +34,8 @@ st.write("Briefing Pusat Meteorologi Maritim")
 col1, col2 = st.columns([1, 5])
 
 # Load the csv of tide data
-main_table = pd.read_csv('/home/adit/#time_series/pasut_hidrosal/tabel_pasut_hidros_briefing.csv')
+#main_table = pd.read_csv('/home/adit/#time_series/pasut_hidrosal/tabel_pasut_hidros_briefing.csv')
+main_table = pd.read_csv('./tabel_pasut_hidros_briefing.csv')
 
 # timestamping and indexing
 start_time = pd.Timestamp("2024-01-01 01:00:00")  # Example starting datetime with hour
