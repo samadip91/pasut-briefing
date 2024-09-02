@@ -25,7 +25,7 @@ margins_css = """
 st.markdown(margins_css, unsafe_allow_html=True)
 
 # Set the image as the header with a caption and custom width
-st.image(icon_url, width=150)
+#st.image(icon_url, width=150)
 # Streamlit title and subtitle
 st.title('Tabel dan Grafik Pasang Surut')
 st.write("Briefing Pusat Meteorologi Maritim")
