@@ -5,6 +5,25 @@ import plotly.graph_objects as go
 from datetime import date
 from datetime import datetime, timedelta
 
+import folium
+from streamlit_folium import folium_static
+
+st.title("Peta Interaktif dengan Streamlit dan Folium")
+
+# Buat peta dasar
+m = folium.Map(location=[-37.8136, 144.9631], zoom_start=13)
+
+# Tambahkan marker
+folium.Marker([-37.8136, 144.9631], popup="Melbourne").add_to(m)
+
+# Tambahkan data dari DataFrame
+data = pd.DataFrame({'lat': [37.7749, -122.4194, -33.8568, 151.2153], 'lon': [-122.4194, -37.8136, 151.2153, -33.8568], 'name': ['San Francisco', 'Melbourne', 'Sydney', 'Auckland']})
+for index, row in data.iterrows():
+    folium.Marker([row['lat'], row['lon']], popup=row['name']).add_to(m)
+
+# Tampilkan peta di Streamlit
+folium_static(m)
+
 # Image URL
 icon_url = "https://upload.wikimedia.org/wikipedia/commons/1/12/Logo_BMKG_%282010%29.png"
 st.set_page_config(page_title="Pasut Briefing Maritim", page_icon=icon_url, layout="wide")
